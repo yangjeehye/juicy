@@ -1,0 +1,378 @@
+@charset "utf-8";
+
+#wrap {
+	font-family: '나눔고딕';
+}
+
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	border-bottom: 3px solid #e20c29;
+	z-index: 1000;
+}
+
+header > .bg_lnb {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100px;
+	width: 100%;
+	min-width: 980px;
+	height: 227px;
+	background-image: url(./../images/bg_gnb_sub_menu01-1.gif);
+	background-position: center center;
+	border-top: 3px solid #e20c29;
+	border-bottom: 1px solid #e20c29;
+}
+
+header > .bg_lnb > a {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 26px;
+	width: 170px;
+	height: 170px;
+	margin-left: -556px;
+	text-indent: -9999px;
+	background-image: url(./../images/bg_lnb_new.png);
+	background-size: cover;
+}
+
+header > .container {
+	position: relative;
+	width: 1100px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+header > .container > .logo {
+	position: absolute;
+	left: 0;
+	top: 15px;
+	width: 97px;
+	background-image: url(./../images/gnb_logo.png);
+}
+
+header > .container > .logo > a {
+	display: block;
+	height: 69px;
+	text-indent: -9999px;
+}
+
+header > .container > nav {
+	position: absolute;
+	right: 0;
+	top: 40px;
+}
+
+header > .container > nav > .gnb {
+	display: flex;
+	justify-content: space-between;
+	width: 750px;
+}
+
+header > .container > nav > .gnb > li {
+	height: 70px;
+	font-size: 19px;
+	font-weight: 800;
+}
+
+header > .container > nav > .gnb > li:hover > a > .bar {
+	display: block;
+	margin-top: 13px;
+	border-bottom: 5px solid #e20c29;
+}
+
+header > .container > nav > .gnb > li:nth-child(3):hover > a > .bar {
+	display: block;
+	position: absolute;
+	left: 50%;
+	width: 75px;
+	margin-left: -80px;
+	border-bottom: 5px solid #e20c29;
+}
+
+header > .container > nav > .gnb > li:nth-child(4):hover > a > .bar {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: 47px;
+	width: 75px;
+	border-bottom: 5px solid #e20c29;
+}
+
+header > .container > nav > .gnb > li > a {
+	display: block;
+	height: 40px;
+	color: #e20c29;
+}
+
+/* 서브메뉴 */
+header > .container > nav > .gnb > li:nth-child(3) > .lnb > li:nth-child(2):hover > a {
+	color: #fff;
+	background-color: #e20c29;
+}
+
+header > .container > nav > .gnb > li:nth-child(4) > .lnb > li:nth-child(1):hover > a {
+	color: #fff;
+	background-color: #e20c29;
+}
+
+header > .container > nav .lnb {
+	display: none;
+	position: absolute;
+	margin-top: 32px;
+}
+
+header > .container > nav .lnb > li {
+	position: relative;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+header > .container > nav .lnb > li > a {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	color: #c51d2d;
+	letter-spacing: -1px;
+}
+
+header > .container > nav .lnb > li:hover > a {
+	font-weight: bold;
+}
+
+header > .container > nav .lnb > li > .sub_on_3 {
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 139px;
+	height: 35px;
+	margin-left: 186px;
+	line-height: 35px;
+	background-color: #fff;
+	border: 1px solid #555;
+	z-index: 200;
+}
+
+header > .container > nav .lnb > li > .sub_on_4 {
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 108px;
+	height: 35px;
+	margin-left: 296px;
+	line-height: 35px;
+	background-color: #fff;
+	border: 1px solid #555;
+	z-index: 200;
+}
+
+header > .container > nav .lnb > li > .click-ring1 {
+	position: fixed;
+	left: 50%;
+	top: 121px;
+	margin-left: 50px;
+	z-index: 100;
+}
+
+header > .container > nav .lnb > li > .click-ring1 > span {
+	display: block;
+	position: absolute;
+	border: 2px solid #ff6a25;
+	border-radius: 50%;
+}
+
+header > .container > nav .lnb > li > .click-ring1 > span.ring-1 {
+	right: -50px;
+	top: 30px;
+	width: 10px;
+	height: 10px;
+	opacity: 0.7;
+}
+
+header > .container > nav .lnb > li > .click-ring1 > span.ring-2 {
+	right: -55px;
+	top: 25px;
+	width: 20px;
+	height: 20px;
+	opacity: 0.5;
+}
+
+header > .container > nav .lnb > li > .click-ring1 > span.ring-3 {
+	right: -60px;
+	top: 20px;
+	width: 30px;
+	height: 30px;
+	opacity: 0.3;
+}
+
+header > .container > nav .lnb > li > .click-ring2 {
+	position: fixed;
+	left: 50%;
+	top: 90px;
+	margin-left: 176px;
+	z-index: 100;
+}
+
+header > .container > nav .lnb > li > .click-ring2 > span {
+	display: block;
+	position: absolute;
+	border: 2px solid #ff6a25;
+	border-radius: 50%;
+}
+
+header > .container > nav .lnb > li > .click-ring2 > span.ring-1 {
+	right: -50px;
+	top: 30px;
+	width: 10px;
+	height: 10px;
+	opacity: 0.7;
+}
+
+header > .container > nav .lnb > li > .click-ring2 > span.ring-2 {
+	right: -55px;
+	top: 25px;
+	width: 20px;
+	height: 20px;
+	opacity: 0.5;
+}
+
+header > .container > nav .lnb > li > .click-ring2 > span.ring-3 {
+	right: -60px;
+	top: 20px;
+	width: 30px;
+	height: 30px;
+	opacity: 0.3;
+}
+/* header end */
+
+/* section */
+section.page1 {
+	width: 1100px;
+	margin: 103px auto 0;
+}
+
+section.page1 > img {
+	width: 100%;
+}
+
+section.page2 {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+section.page2 > img {
+	width: 100%;
+}
+
+section.page3 {
+	width: 1100px;
+	margin: -3px auto 0;
+}
+
+section.page3 > img {
+	width: 100%;
+}
+/* section end*/
+
+/* footer */
+footer {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	margin: -4px auto;
+}
+
+footer > h2 {
+	height: 50px;
+	background-color: #e20c29;
+	text-indent: -9999px;
+}
+
+footer > .footer-info {
+	display: flex;
+	position: absolute;
+	left: 50%;
+	top: 17px;
+	width: 1100px;
+	margin-left: -550px;
+}
+
+footer > .footer-info > li {
+	height: 20px;
+}
+
+footer > .footer-info > li:nth-child(1) {
+	width: 160px;
+}
+
+footer > .footer-info > li:nth-child(2) {
+	width: 800px;
+}
+
+footer > .footer-info > li > a {
+	display: block;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 800;
+}
+
+footer > .footer-info > li:nth-child(3) > a {
+	display: block;
+	position: absolute;
+	right: 50px;
+	top: -12px;
+	width: 40px;
+	height: 40px;
+	background-image: url(./../images/sns_fb.png);
+	background-size: cover;
+	text-indent: -9999px;
+}
+
+footer > .footer-info > li:nth-child(4) > a {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -12px;
+	width: 40px;
+	height: 40px;
+	background-image: url(./../images/sns_insta.png);
+	background-size: cover;
+	text-indent: -9999px;
+}
+
+footer > .footer-txt {
+	width: 1100px;
+	margin: 45px auto;
+}
+
+footer > .footer-txt > dt {
+	color: #e20c29;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+footer > .footer-txt > dd {
+	height: 22px;
+	color: #e20c29;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 22px;
+	margin-top: 20px;
+}
+
+footer > address {
+	position: absolute;
+	left: 50%;
+	top: 250px;
+	width: 1100px;
+	color: #e20c29;
+	font-weight: 700;
+	margin-left: -550px;
+}
+/* footer end*/
